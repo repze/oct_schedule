@@ -24,6 +24,7 @@
         .timeday{
             background-color: yellow;
             color: black;
+            min-width: 94px;
         }
         .time{
             background-color: firebrick;
@@ -32,6 +33,7 @@
         .day{
             background-color: firebrick;
             color: yellow;
+            min-width: 124px;
         }
 
         
@@ -50,7 +52,7 @@
         td{
             border: 2px dashed yellow;
             text-align: center;
-            padding: 8px;
+            padding: 18px;
             background-color: black;
             color: white;
         }
@@ -60,6 +62,7 @@
             background-color: transparent;
             font-size: medium;
             color: white;
+            padding: 0px;
         }
         .leave{
             text-decoration: line-through;
@@ -109,76 +112,15 @@
 
     function erinaFunction(erina)
     {
-        var button = document.getElementsByClassName('erina-offday');
-        
-        erina.classList.add('leave');
+        let text = erina.innerHTML;
+        erina.innerHTML = text == "Erina" ? "<s>Erina</s>" : "Erina";
     }
     function khairulFunction(khairul)
     {
-        var button = document.getElementsByClassName('khairul-offday');
-        
-        khairul.classList.add('leave');
+        let text = khairul.innerHTML;
+        khairul.innerHTML = text == "Khairul" ? "<s>Khairul</s>" : "Khairul";
     }
     </script>
-    
-    <h1><u>30 September - 6 October, 2024</u></h1>
-    <table>
-        <tr>
-        <th class="timeday">TIME / DAY</th>
-        <th class="day">Monday<br>(30th September)</th>
-        <th class="day">Tuesday<br>(1st October)</th>
-        <th class="day">Wednesday<br>(2nd October)</th>
-        <th class="day">Thursday<br>(3rd October)</th>
-        <th class="day">Friday<br>(4th October)</th>
-        <th class="day">Saturday<br>(5th October)</th>
-        <th class="day">Sunday<br>(6th October)</th>
-        </tr>
-        
-        <tr>
-        <th class="time">7AM - 7PM</th>
-        <td>OK, Azim</td>
-        <td>OK, Azim</td>
-        <td>OK, Azim</td>
-        <td>OK, <s>Azim</s></td>
-        <td>OK, Azim</td>
-        <td>OK, Azim</td>
-        <td><s>OK</s>, Azim</td>
-        </tr>
-    
-        <tr>
-        <th class="time">8AM - 4PM</th>
-        <td>Khairul</td>
-        <td>Khairul</td>
-        <td><s>Khairul</s></td>
-        <td>Khairul</td>
-        <td>Khairul</td>
-        <td>Khairul</td>
-        <td><s>Khairul</s></td>
-        </tr>
-
-        <tr>
-        <th class="time">4PM - 12AM</th>
-        <td>Erina</td>
-        <td>Erina</td>
-        <td>Erina</td>
-        <td><s>Erina</s></td>
-        <td>Erina</td>
-        <td><s>Erina</s></td>
-        <td>Erina</td>
-        </tr>
-    
-        <tr>
-        <th class="time">7PM - 7AM</th>
-        <td><s>Ashard</s>, Izudin</td>
-        <td>Ashard, Izudin</td>
-        <td>Ashard, Izudin</td>
-        <td>Ashard, Izudin</td>
-        <td>Ashard, <s>Izudin</s></td>
-        <td>Ashard, Izudin</td>
-        <td>Ashard, Izudin</td>
-        </tr>
-    </table>
-    <br>
 
     <h1><u>7 - 13 October, 2024</u></h1>
     <table>
@@ -195,19 +137,19 @@
         
         <tr>
         <th class="time">7AM - 7PM</th>
-        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>, 
+        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>,
             <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
-        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>, 
+        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>,
             <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
-        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>, 
+        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>,
             <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
-        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>, 
+        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>,
             <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
-        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>, 
+        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>,
             <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
-        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>, 
+        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>,
             <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
-        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>, 
+        <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button>,
             <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
         </tr>
     
@@ -235,19 +177,19 @@
     
         <tr>
         <th class="time">7PM - 7AM</th>
-        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>, 
+        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>,
             <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
-        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>, 
+        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>,
             <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
-        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>, 
+        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>,
             <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
-        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>, 
+        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>,
             <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
-        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>, 
+        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>,
             <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
-        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>, 
+        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>,
             <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
-        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>, 
+        <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button>,
             <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
         </tr>
     </table>
