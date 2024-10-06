@@ -9,7 +9,8 @@
         table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
-            width: 100%;
+            width: 90%;
+            margin: auto;
         }
 
         h1{
@@ -73,53 +74,53 @@
 <body>
 
     <script>
-    function okFunction(ok)
-    {
-        var button = document.getElementsByClassName('ok-offday');
-        for (var i = 0; i < button.length; i++)
+        function okFunction(ok)
         {
-            button[i].classList.remove('leave');
+            var button = document.getElementsByClassName('ok-offday');
+            for (var i = 0; i < button.length; i++)
+            {
+                button[i].classList.remove('leave');
+            }
+            ok.classList.add('leave');
         }
-        ok.classList.add('leave');
-    }
-    function azimFunction(azim)
-    {
-        var button = document.getElementsByClassName('azim-offday');
-        for (var i = 0; i < button.length; i++)
+        function azimFunction(azim)
         {
-            button[i].classList.remove('leave');
+            var button = document.getElementsByClassName('azim-offday');
+            for (var i = 0; i < button.length; i++)
+            {
+                button[i].classList.remove('leave');
+            }
+            azim.classList.add('leave');
         }
-        azim.classList.add('leave');
-    }
-    function ashardFunction(ashard)
-    {
-        var button = document.getElementsByClassName('ashard-offday');
-        for (var i = 0; i < button.length; i++)
+        function ashardFunction(ashard)
         {
-            button[i].classList.remove('leave');
+            var button = document.getElementsByClassName('ashard-offday');
+            for (var i = 0; i < button.length; i++)
+            {
+                button[i].classList.remove('leave');
+            }
+            ashard.classList.add('leave');
         }
-        ashard.classList.add('leave');
-    }
-    function izudinFunction(izudin)
-    {
-        var button = document.getElementsByClassName('izudin-offday');
-        for (var i = 0; i < button.length; i++)
+        function izudinFunction(izudin)
         {
-            button[i].classList.remove('leave');
+            var button = document.getElementsByClassName('izudin-offday');
+            for (var i = 0; i < button.length; i++)
+            {
+                button[i].classList.remove('leave');
+            }
+            izudin.classList.add('leave');
         }
-        izudin.classList.add('leave');
-    }
 
-    function erinaFunction(erina)
-    {
-        let text = erina.innerHTML;
-        erina.innerHTML = text == "Erina" ? "<s>Erina</s>" : "Erina";
-    }
-    function khairulFunction(khairul)
-    {
-        let text = khairul.innerHTML;
-        khairul.innerHTML = text == "Khairul" ? "<s>Khairul</s>" : "Khairul";
-    }
+        function erinaFunction(erina)
+        {
+            let text = erina.innerHTML;
+            erina.innerHTML = text == "Erina" ? "<s>Erina</s>" : "Erina";
+        }
+        function khairulFunction(khairul)
+        {
+            let text = khairul.innerHTML;
+            khairul.innerHTML = text == "Khairul" ? "<s>Khairul</s>" : "Khairul";
+        }
     </script>
 
     <h1><u>7 - 13 October, 2024</u></h1>
