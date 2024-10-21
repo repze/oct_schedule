@@ -109,6 +109,15 @@
             }
             izudin.classList.add('leave');
         }
+        function wanaFunction(wana)
+        {
+            var button = document.getElementsByClassName('wana-offday');
+            for (var i = 0; i < button.length; i++)
+            {
+                button[i].classList.remove('leave');
+            }
+            wana.classList.add('leave');
+        }
 
         function erinaFunction(erina)
         {
@@ -122,75 +131,82 @@
         }
     </script>
     
-    <h2><u>14 - 20 October, 2024</u></h2>
+    <h2><u>21 - 27 October, 2024</u></h2>
     <table>
         <tr>
         <th class="timeday">TIME / DAY</th>
-        <th class="day">Monday<br>(14th October)</th>
-        <th class="day">Tuesday<br>(15th October)</th>
-        <th class="day">Wednesday<br>(16th October)</th>
-        <th class="day">Thursday<br>(17th October)</th>
-        <th class="day">Friday<br>(18th October)</th>
-        <th class="day">Saturday<br>(19th October)</th>
-        <th class="day">Sunday<br>(20th October)</th>
+        <th class="day">Monday<br>(21st October)</th>
+        <th class="day">Tuesday<br>(22nd October)</th>
+        <th class="day">Wednesday<br>(23rd October)</th>
+        <th class="day">Thursday<br>(24th October)</th>
+        <th class="day">Friday<br>(25th October)</th>
+        <th class="day">Saturday<br>(26th October)</th>
+        <th class="day">Sunday<br>(27th October)</th>
         </tr>
         
         <tr>
         <th class="time">7AM - 7PM</th>
         <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button><br>
-            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
+            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button><br>
+            <button class="wana-offday wana-work"  onclick="wanaFunction(this)">Wana</button></td>
         <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button><br>
-            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
+            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button><br>
+            <button class="wana-offday wana-work"  onclick="wanaFunction(this)">Wana</button></td>
         <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button><br>
-            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
+            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button><br>
+            <button class="wana-offday wana-work"  onclick="wanaFunction(this)">Wana</button></td>
         <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button><br>
-            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
+            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button><br>
+            <button class="wana-offday wana-work"  onclick="wanaFunction(this)">Wana</button></td>
         <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button><br>
-            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
+            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button><br>
+            <button class="wana-offday wana-work"  onclick="wanaFunction(this)">Wana</button></td>
         <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button><br>
-            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
+            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button><br>
+            <button class="wana-offday wana-work"  onclick="wanaFunction(this)">Wana</button></td>
         <td><button class="ok-offday ok-work"  onclick="okFunction(this)">OK</button><br>
-            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
+            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button><br>
+            <button class="wana-offday wana-work"  onclick="wanaFunction(this)">Wana</button></td>
         </tr>
     
         <tr>
         <th class="time">8AM - 4PM</th>
-        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
-        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
-        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
-        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
-        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
-        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
-        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
+        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
+        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
+        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
+        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
+        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
+        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
+        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
         </tr>
 
         <tr>
         <th class="time">4PM - 12AM</th>
-        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
-        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
-        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
-        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
-        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
-        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
-        <td><button class="erina-offday erina-work"  onclick="erinaFunction(this)">Erina</button></td>
+        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
+        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
+        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
+        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
+        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
+        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
+        <td><button class="khairul-offday khairul-work"  onclick="khairulFunction(this)">Khairul</button></td>
         </tr>
     
         <tr>
         <th class="time">7PM - 7AM</th>
         <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button><br>
-            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
+            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
         <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button><br>
-            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
+            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
         <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button><br>
-            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
+            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
         <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button><br>
-            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
+            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
         <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button><br>
-            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
+            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
         <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button><br>
-            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
+            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
         <td><button class="ashard-offday ashard-work"  onclick="ashardFunction(this)">Ashard</button><br>
-            <button class="izudin-offday izudin-work"  onclick="izudinFunction(this)">Izudin</button></td>
+            <button class="azim-offday azim-work"  onclick="azimFunction(this)">Azim</button></td>
         </tr>
     </table>
     <br>
